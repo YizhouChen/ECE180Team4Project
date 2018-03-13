@@ -6,6 +6,7 @@ import abc
 from collections import defaultdict
 import random
 
+‘’‘distance metrics: pearson distance & cosine distance’‘’
 def pearson(dataA, dataB, significanceWeighting = False):
     intersection = [obj for obj in dataA if obj in dataB]
     if len(intersection) == 0:
